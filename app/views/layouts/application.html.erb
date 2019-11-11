@@ -9,8 +9,19 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body class="staticpages signpages">
+  <body>
     <%= render 'layouts/header'%>
-    <%= yield %>
+      <div class="container p-3">
+        <% if flash.any? %>
+          <% flash.each do |type, msg|%>
+            <div class="alert alert-<%= type %>">
+              <div><%= msg %></div>
+            </div>
+          <% end %>
+        <% end %>
+
+        <%= yield %>
+
+      </div>
   </body>
 </html>

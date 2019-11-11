@@ -93,25 +93,44 @@ address {
 
 }
 
+.signup {
+  background-image: url(signup.jpg);
+  background-size: 100%;
+}
+
+.jumbotron {
+  background: rgba(151, 150, 150, 0.438) !important;
+}
+
+// .opacity {
+//   background: rgba(200, 200, 200, 0.5);
+// }
+
 // home
 
-.top-text-area {
-  padding-top: 30px;
+.top-image {
   display: inline-block;
   text-align: center;
-  margin-left: 110px;
 }
 
+.top-text-area {
+  text-align: center;
+  padding: 30px 100px 0px 100px;
+  margin: 0px 70px;
+}
 
 .top-text {
-  font-size: 70px;
+  font-size: 75px;
   display: inline-block;
   text-align: center;
 }
+
 
 // about
 
 .float-right {
   float: right;
 }
+
+// form
 
