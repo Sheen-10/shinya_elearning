@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container mb-1">
+        <strong><%= link_to 'Awesome Idioms', root_path, class: "navbar-brand"%></strong>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+<%# bootstrapの<a>タグのところをrubyのlink_toに変える。見せる部分だけ<%= %>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <%= link_to "Home", root_path, class: "nav-link"%>
+                </li>
+                <li class="nav-item">
+                    <%= link_to "About", about_path, class: "nav-link"%>
+                </li>
+                <li class="nav-item">
+                    <%= link_to "Sign-up", "#", class: "nav-link"%>
+                </li>
+                <li class="nav-item">
+                    <%= link_to "Login", "#", class: "nav-link"%>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
