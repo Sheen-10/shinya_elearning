@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>ShinyaElearning</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+    <head>
+        <title>ShinyaElearning</title>
+        <%= csrf_meta_tags %>
+        <%= csp_meta_tag %>
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    </head>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+    <body>
+        <%= render 'layouts/header'%>
+        <div class="container p-3">
+            <% if flash.any? %>
+                <% flash.each do |type, msg|%>
+                    <div class="alert alert-<%= type %>">
+                        <div><%= msg %></div>
+                    </div>
+                <% end %>
+            <% end %>
 
-  <body class="staticpages signpages">
-    <%= render 'layouts/header'%>
-    <%= yield %>
-  </body>
+            <%= yield %>
+        </div>
+    </body>
 </html>
