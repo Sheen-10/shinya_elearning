@@ -84,7 +84,13 @@ address {
 
 // 全体
 
-
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 // .staticpages
 
@@ -132,5 +138,8 @@ address {
   float: right;
 }
 
-// form
+// dashboard
 
+.card-body {
+  padding: 1.25em;
+}
