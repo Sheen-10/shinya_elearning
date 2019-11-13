@@ -18,5 +18,9 @@
         <%= f.label :password_confirmation %>
         <%= f.password_field :password_confirmation, class: "form-control" %>
     </div>
-    <%= f.submit "Create an acount", class: "btn btn-primary btn-block" %>
+    <div class="form-group ">
+                <%= f.label :avatar %>
+                <%= f.file_field :avatar, accept: "image/jpeg, image/git, image/png", class: "form-control" %>
+    </div>
+    <%= f.submit btn_msg, class: "btn btn-primary btn-block" %>
 <% end %>
