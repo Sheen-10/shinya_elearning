@@ -11,9 +11,15 @@
                     <div class="text-center">
                         <div class="card-body mt-3">
                             <div class="text-center dashboard_img">
-                                <img src="/assets/kubo.jpeg">
                                 <div class="text-center">
-                                    <h2 class="mt-5"><%= current_user.name %></h2>
+                                    <div class="mt-2">
+                                        <% if current_user.avatar? %>
+                                            <%= image_tag current_user.avatar.url, class: "img_size"%>
+                                        <% else %>
+                                            <%= image_tag 'profile.png', class: "img_size"%>
+                                        <% end %>
+                                    </div>
+                                    <h2 class="mt-4"><%= current_user.name %></h2>
                                 </div>
                                 <div class="mt-4">
                                     <p>learned 0 words</p>
