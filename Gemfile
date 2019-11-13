@@ -68,4 +68,4 @@ gem 'will_paginate', '~> 3.1.0'
 gem 'will_paginate-bootstrap4'
 
 gem 'carrierwave', '1.2.2'
-gem 'mini_magick', '4.7.0'
+gem 'mini_magick', '4.9.4'
