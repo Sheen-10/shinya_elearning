@@ -82,6 +82,7 @@ address {
 	font-style:normal;
 }
 
+
 // 全体
 
 .container {
@@ -138,7 +139,9 @@ address {
   float: right;
 }
 
+
 // dashboard
+// profile
 
 .card-body {
   padding: 1.25em;
@@ -148,4 +151,8 @@ address {
 .img_size {
   width: 180px;
   height: 180px;
+}
+
+.card-header {
+  background-image: linear-gradient(rgba(230, 225, 225, 0.55), rgba(114, 114, 114, 0.626));
 }
