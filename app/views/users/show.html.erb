@@ -51,6 +51,9 @@
                                     <% end %>
                                 <% end %>
                             </div>
+                            <% if @user.admin? %>
+                                <%= link_to "Administration", admin_home_path, class: "btn btn-primary"%>
+                            <% end %>
                         </div>
                     </div>
                 </div>
