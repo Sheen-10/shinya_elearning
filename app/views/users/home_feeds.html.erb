@@ -14,9 +14,9 @@
                                 <div class="text-center">
                                     <div class="mt-2">
                                         <% if current_user.avatar? %>
-                                            <%= image_tag current_user.avatar.url, class: "img_size"%>
+                                            <%= image_tag current_user.avatar.url, class: "img-size"%>
                                         <% else %>
-                                            <%= image_tag 'profile.png', class: "img_size"%>
+                                            <%= image_tag 'profile.png', class: "img-size"%>
                                         <% end %>
                                     </div>
                                     <h2 class="mt-4"><%= current_user.name %></h2>
