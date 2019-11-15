@@ -148,7 +148,7 @@ address {
 }
 
 
-.img_size {
+.img-size {
   width: 180px;
   height: 180px;
 }
@@ -159,11 +159,28 @@ address {
 
 // admin-home
 
-.admin_choice {
+.admin-choice {
   margin-right: 400px;
   margin-left: 400px;
 }
 
 .home-content h1{
   letter-spacing: 0.1em;
+}
+
+// index
+
+.media-container img {
+  height: 120px;
+  width: 120px;
+}
+
+.media-container h5 {
+  padding-top: 50px;
+  margin-left: 10px;
+}
+
+.media-container a {
+  color: white;
+  font-size: 25px;
 }
