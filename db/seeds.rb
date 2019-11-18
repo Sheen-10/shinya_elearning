@@ -12,5 +12,3 @@ User.create!(
   password: "password",
   admin: true
 )
-
-end

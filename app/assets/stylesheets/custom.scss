@@ -97,11 +97,20 @@ address {
 
 .staticpages {
   background-image: url(sunset.jpg);
-
 }
 
 .signup {
   background-image: url(signup.jpg);
+  background-size: 100%;
+}
+
+.admin-img {
+  background-image: url(books-library.jpg);
+  background-size: 100%;
+}
+
+.admin-detail {
+  background-image: url(women1.jpg);
   background-size: 100%;
 }
 
@@ -168,7 +177,7 @@ address {
   letter-spacing: 0.1em;
 }
 
-// index
+// users-index
 
 .media-container img {
   height: 120px;
@@ -183,4 +192,15 @@ address {
 .media-container a {
   color: white;
   font-size: 25px;
+}
+
+
+// admin-index
+
+.index-text-title {
+  color: white;
+}
+
+.index-text-content {
+  color: white;
 }
