@@ -12,3 +12,18 @@ User.create!(
   password: "password",
   admin: true
 )
+
+50.times do |n|
+  User.create!(
+    name: Faker::Name.name,
+    email: Faker::Internet.unique.email,
+    password: "password"
+  )
+end
+
+50.times do |n|
+  Category.create!(
+    title: Faker::Food.dish,
+    description: Faker::Food.description
+  )
+end
