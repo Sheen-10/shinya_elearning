@@ -1,0 +1,38 @@
+<body class="admin-detail">
+    <div class="container pt-4 mx-auto">
+        <div class="row text-center">
+            <div class=" jumbotron col-md-12 col-md-offset-3 pt-4 pb-3 mb-0 home-content">
+                <div class="offset-md-3 col-md-6">
+                    <h1 class="title">Administer Users</h1>
+                    <div class="row">
+                        <table class="table table-bordered index-table mt-3">
+                            <tr class="index-text-title">
+                                <th width="100">Name</th>
+                                <th width="310">Email</th>
+                                <th width="130">Admin</th>
+                            </tr>
+                            <% @users.each do |user| %>
+                            <tr>
+                                <td class="index-text-content"><%= user.name %></td>
+                                <td class="index-text-content"><%= user.email%></td>
+                                <td>
+                                    <% if user.admin? %>
+                                        <%= link_to 'DELETE', admin_user_path(user), method: :delete, class: "btn btn-light btn-admin-delete-btn" %>
+                                    <% else %>
+                                        <%= link_to 'ADD', admin_user_path(user), method: :patch, class: "btn btn-light btn-admin-give-add" %>
+                                    <% end %>
+                                </td>
+                            </tr>
+                            <% end %>
+                        </table>
+                    </div>
+                <div>
+                <nav aria-label="pagination">
+                    <div class="pagination justify-content-center mt-3">
+                        <%= will_paginate %>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</body>
