@@ -1,0 +1,32 @@
+<body class="admin-category">
+    <div class="container pt-4 mx-auto">
+        <div class="row text-center">
+            <div class=" jumbotron col-md-12 col-md-offset-3 pt-4 pb-3 mb-0 home-content">
+                <div class="offset-md-3 col-md-6">
+                    <h1 class="title">Administer Categories</h1>
+                    <div class="row">
+                        <table class="table table-bordered index-table mt-3">
+                            <tr class="index-text-title">
+                                <th width="110">Title</th>
+                                <th width="500">Description</th>
+                                <th width="150">Settings</th>
+                            </tr>
+                            <% @categories.each do |category| %>
+                            <tr>
+                                <td class="index-text-content"><%= category.title %></td>
+                                <td class="index-text-content"><%= category.description%></td>
+                                <td class="index-text-content">Edit・Delete</td>
+                            </tr>
+                            <% end %>
+                        </table>
+                    </div>
+                <div>
+                <nav aria-label="pagination">
+                    <div class="pagination justify-content-center mt-3">
+                        <%= will_paginate %>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</body>
