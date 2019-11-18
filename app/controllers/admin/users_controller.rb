@@ -21,9 +21,12 @@ class Admin::UsersController < ApplicationController
 
   def destroy
     @user = User.find(params[:id])
-    @user.destroy
-    flash[:success] = "Destroyed Administer Users"
-    redirect_to admin_users_url
+    if @user.update_attribute(:admin,false)
+      flash[:success] = "Destryed Administer Users"
+      redirect_to admin_users_url
+    else
+      render 'index'
+    end
   end
 
   private
