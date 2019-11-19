@@ -20,7 +20,7 @@
                                 <td class="index-text-content"><%= category.description%></td>
                                 <th width="150" class="index-text-content-edit-delete">
                                     <%= link_to "Edit", edit_admin_category_path(category), class: "#"%> /
-                                    <%= link_to "Delite", admin_category_path(category), method: :delete , class: "#",data: { confirm: "Are you sure you want to delete this category?"} %>
+                                    <%= link_to "Delete", admin_category_path(category), method: :delete , class: "#",data: { confirm: "Are you sure you want to delete this category?"} %>
                                 </th>
                             </tr>
                             <% end %>
