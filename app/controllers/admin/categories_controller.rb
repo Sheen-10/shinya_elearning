@@ -26,7 +26,7 @@ class Admin::CategoriesController < ApplicationController
   def update
     @category = Category.find(params[:id])
     if @category.update_attributes(category_params)
-      flash[:success] = "Add Categories"
+      flash[:success] = "Category Successfully Updated"
       redirect_to admin_categories_url
     else
       render 'new'
@@ -36,7 +36,7 @@ class Admin::CategoriesController < ApplicationController
   def destroy
     @category = Category.find(params[:id])
     if @category.destroy
-      flash[:success] = "Removed Categories"
+      flash[:success] = "Removed Category"
       redirect_to admin_categories_url
     else
       render 'new'
