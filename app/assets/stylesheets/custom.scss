@@ -120,6 +120,12 @@ address {
   background-size: cover;
 }
 
+.admin-category-new {
+  background-image: url(bookcase.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .jumbotron {
   background: rgba(151, 150, 150, 0.438) !important;
 }
@@ -205,8 +211,33 @@ address {
 
 .index-text-title {
   color: white;
+  
 }
 
 .index-text-content {
+  color: white;
+}
+
+// .admin-category
+
+.category-title {
+  letter-spacing: 0.1em;
+}
+
+
+.category-title-button a {
+  width: 200px;
+  margin: auto;
+}
+
+// .admin-category-form
+
+.admin-category-new-title {
+  color: white;
+}
+
+//shared
+
+.alert-list li {
   color: white;
 }
