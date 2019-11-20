@@ -211,7 +211,7 @@ address {
 
 .index-text-title {
   color: white;
-  
+
 }
 
 .index-text-content {
@@ -248,4 +248,15 @@ address {
 
 .alert-list li {
   color: white;
+}
+
+//words
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
 }
