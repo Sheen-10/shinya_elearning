@@ -16,7 +16,7 @@
                             </tr>
                             <% @categories.each do |category| %>
                             <tr>
-                                <td class="index-text-content"><%= category.title %></td>
+                                <td class="index-text-content"><%= link_to category.title, admin_category_words_path(category), class: "index-text-content-title"%></td>
                                 <td class="index-text-content"><%= category.description%></td>
                                 <th width="150" class="index-text-content-edit-delete">
                                     <%= link_to "Edit", edit_admin_category_path(category), class: "#"%> /
