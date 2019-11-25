@@ -93,7 +93,13 @@ address {
   margin-left: auto;
 }
 
-// .staticpages
+.page-title {
+  color: white;
+  letter-spacing: 0.05em;
+  font-weight: 350px;
+}
+
+// background
 
 .staticpages {
   background-image: url(sunset.jpg);
@@ -103,6 +109,7 @@ address {
   background-image: url(signup.jpg);
   background-size: 100%;
 }
+
 
 .admin-img {
   background-image: url(books-library.jpg);
@@ -126,13 +133,17 @@ address {
   background-size: cover;
 }
 
+.category-lesson {
+  background-image: url(lesson.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .jumbotron {
   background: rgba(151, 150, 150, 0.438) !important;
 }
 
-// .opacity {
-//   background: rgba(200, 200, 200, 0.5);
-// }
+
 
 // home
 
@@ -160,6 +171,11 @@ address {
   float: right;
 }
 
+//sign-up
+
+.signup-title h1 {
+  letter-spacing: 0.1em;
+}
 
 // dashboard
 // profile
@@ -257,6 +273,28 @@ address {
   font-size: 40px;
 }
 
-.word-category-discription{
+.word-category-discription {
   color: white;
+}
+
+//lesson-category
+
+.category-lesson-title {
+  color: white;
+  letter-spacing: 0.1em;
+}
+
+.tab-settings a {
+  padding: 8px 30px;
+  background-color: white !important;
+  color: black !important;
+}
+.tab-settings-list a {
+  padding: 8px 20px;
+  color: white;
+}
+
+.category-each {
+  width: 350px;
+  margin: 0px 120px;
 }

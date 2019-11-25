@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'categories/index'
   root 'static_pages#home'
   get '/about', to: 'static_pages#about'
   get  '/signup',  to: 'users#new'
@@ -15,7 +16,7 @@ Rails.application.routes.draw do
   end
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-
+  resources :categories, only: [:index]
   resources :users
   resources :relationships, only: [:create, :destroy]
 end
