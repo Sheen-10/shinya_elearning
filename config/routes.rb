@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  get 'lessons/create'
-  get 'lessons/show'
   get 'categories/index'
   root 'static_pages#home'
   get '/about', to: 'static_pages#about'
