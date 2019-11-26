@@ -83,6 +83,7 @@ address {
 }
 
 
+
 // 全体
 
 .container {
@@ -98,6 +99,8 @@ address {
   letter-spacing: 0.05em;
   font-weight: 350px;
 }
+
+
 
 // background
 
@@ -139,6 +142,12 @@ address {
   background-size: cover;
 }
 
+.lesson-answer{
+  background-image: url(lesson-answer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .jumbotron {
   background: rgba(151, 150, 150, 0.438) !important;
 }
@@ -165,17 +174,22 @@ address {
 }
 
 
+
 // about
 
 .float-right {
   float: right;
 }
 
+
+
 //sign-up
 
 .signup-title h1 {
   letter-spacing: 0.1em;
 }
+
+
 
 // dashboard
 // profile
@@ -194,6 +208,8 @@ address {
   background-image: linear-gradient(rgba(230, 225, 225, 0.55), rgba(114, 114, 114, 0.626));
 }
 
+
+
 // admin-home
 
 .admin-choice {
@@ -204,6 +220,8 @@ address {
 .home-content h1{
   letter-spacing: 0.1em;
 }
+
+
 
 // users-index
 
@@ -223,6 +241,7 @@ address {
 }
 
 
+
 // admin-index
 
 .index-text-title {
@@ -233,6 +252,8 @@ address {
 .index-text-content {
   color: white;
 }
+
+
 
 // .admin-category-index
 
@@ -254,17 +275,23 @@ address {
   color: white;
 }
 
+
+
 // .admin-category-form
 
 .admin-category-new-title {
   color: white;
 }
 
+
+
 //shared
 
 .alert-list li {
   color: white;
 }
+
+
 
 //word
 
@@ -276,6 +303,8 @@ address {
 .word-category-discription {
   color: white;
 }
+
+
 
 //lesson-category
 
@@ -297,4 +326,46 @@ address {
 .category-each {
   width: 350px;
   margin: 0px 120px;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card-title-words {
+  margin-left: 220px;
+  font-size: 15px;
+}
+
+
+//answer index
+
+.answer-title h1 {
+  background-color:rgba(0, 0, 0, 0.8);
+  height: 60px;
+  padding-top: 4px;
+  font-size: 2.5rem;
+  color: white;
+  border-radius: 10px;
+}
+
+.answer-title-count h6 {
+  margin-top: 50px;
+  color: white;
+  margin-bottom: 0px;
+}
+
+.answer-title-count {
+  color: white;
+  font-size: small;
+}
+
+.answer-title-count-word h2 {
+  color: white;
+  font-size: 40px;
+}
+
+.answer-title-count-word-button {
+  height: 45px;
+  width: 180px;
 }
