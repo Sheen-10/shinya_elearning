@@ -1,6 +1,7 @@
 class Word < ApplicationRecord
   belongs_to :category
   has_many :choices, dependent: :destroy
+  has_many :answers, dependent: :destroy
   accepts_nested_attributes_for :choices
   validate :has_one_correct_answer
   validate :has_unique_choice

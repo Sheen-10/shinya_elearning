@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'lessons/create'
+  get 'lessons/show'
   get 'categories/index'
   root 'static_pages#home'
   get '/about', to: 'static_pages#about'
@@ -13,6 +15,10 @@ Rails.application.routes.draw do
     resources :categories do
       resources :words
     end
+  end
+
+  resources :lessons do
+    resources :answers
   end
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

@@ -23,6 +23,9 @@ class User < ApplicationRecord
   has_many :following, through: :active_relationships, source: :followed
   has_many :follower, through: :passive_relationships, source: :follower
 
+  has_many :lessons, dependent: :destroy
+
+
 # 要は自分がfollowerになりますということ
   def follow(other_user)
     active_relationships.create(followed_id: other_user.id)
@@ -39,5 +42,10 @@ class User < ApplicationRecord
 
 
   mount_uploader :avatar, AvatarUploader
+
+
+  def lesson_taken(cat_id)
+    lesson = lessons.find_by(category_id: cat_id)
+  end
 end
 
