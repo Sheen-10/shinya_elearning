@@ -17,7 +17,7 @@
                         <% end %>
                     <% end %>
                 </div>
-                <div class="media-body">
+                <div class="media-body feed-list">
                     <%= link_to_if activity.user == current_user, "You", user_path(current_user) do
                         link_to activity.user.name, user_path(activity.user.id) end %> learned
                     <%= activity.action.lesson_results %> of
@@ -45,7 +45,7 @@
                         <% end %>
                     <% end %>
                 </div>
-                <div class="media-body">
+                <div class="media-body feed-list">
                     <%= link_to_if activity.user == current_user, "You", user_path(current_user) do
                         link_to activity.user.name, user_path(activity.user.id) end %> followed
                     <%= link_to activity.action.followed.name, activity.action.followed %>
