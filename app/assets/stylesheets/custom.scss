@@ -152,6 +152,11 @@ address {
   background: rgba(151, 150, 150, 0.438) !important;
 }
 
+.media-middle img {
+  height: 70px;
+  width: 70px;
+  margin-top: 10px;
+}
 
 
 // home
@@ -291,6 +296,12 @@ address {
   color: white;
 }
 
+//shared-feed
+
+.media-body {
+  margin-left: 25px;
+  margin-top: 30px;
+}
 
 
 //word
