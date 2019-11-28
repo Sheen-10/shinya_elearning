@@ -142,8 +142,14 @@ address {
   background-size: cover;
 }
 
-.lesson-answer{
+.lesson-answer {
   background-image: url(lesson-answer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.lesson-result {
+  background-image: url(lesson-result.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -379,4 +385,11 @@ address {
 .answer-title-count-word-button {
   height: 45px;
   width: 180px;
+}
+
+
+//lesson-show
+
+.result-count {
+  margin-left: 275px;
 }
