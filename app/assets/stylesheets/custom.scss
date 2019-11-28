@@ -106,22 +106,27 @@ address {
 
 .staticpages {
   background-image: url(sunset.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .signup {
   background-image: url(signup.jpg);
   background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 
 .admin-img {
   background-image: url(books-library.jpg);
   background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .admin-detail {
   background-image: url(women1.jpg);
   background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .admin-category {
@@ -142,8 +147,14 @@ address {
   background-size: cover;
 }
 
-.lesson-answer{
+.lesson-answer {
   background-image: url(lesson-answer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.lesson-result {
+  background-image: url(lesson-result.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -379,4 +390,11 @@ address {
 .answer-title-count-word-button {
   height: 45px;
   width: 180px;
+}
+
+
+//lesson-show
+
+.result-count {
+  margin-left: 275px;
 }
