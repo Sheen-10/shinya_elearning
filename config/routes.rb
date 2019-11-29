@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'words/index'
   get 'categories/index'
   root 'static_pages#home'
   get '/about', to: 'static_pages#about'
@@ -24,4 +25,5 @@ Rails.application.routes.draw do
   resources :categories, only: [:index]
   resources :users
   resources :relationships, only: [:create, :destroy]
+  resources :words, only: [:index]
 end
