@@ -27,6 +27,7 @@ class User < ApplicationRecord
 
   has_many :activities, dependent: :destroy
 
+  has_many :categories, through: :lessons
 
 # 要は自分がfollowerになりますということ
   def follow(other_user)
