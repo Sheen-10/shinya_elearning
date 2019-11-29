@@ -29,6 +29,8 @@ class User < ApplicationRecord
 
   has_many :categories, through: :lessons
 
+  has_many :answers, through: :lessons
+
 # 要は自分がfollowerになりますということ
   def follow(other_user)
     active_relationships.create(followed_id: other_user.id)
