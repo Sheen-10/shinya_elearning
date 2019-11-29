@@ -13,18 +13,18 @@
                                 <th width="130">Result</th>
                             </tr>
                             <% @answers.each do |answer| %>
-                            <tr>
-                                <td class="index-text-content"><%= answer.word.content %></td>
-                                <td class="index-text-content"><%= answer.choice.content %></td>
-                                <td class="index-text-content"><%= answer.word.correct_answer %></td>
-                                <td class="index-text-content">
-                                <% if  answer.choice.content == answer.word.correct_answer %>
-                                    <i class="fas fa-check-circle"></i>
-                                <% else %>
-                                    <i class="fas fa-times-circle"></i>
-                                <% end %>
-                                </td>
-                            </tr>
+                                <tr>
+                                    <td class="index-text-content"><%= answer.word.content %></td>
+                                    <td class="index-text-content"><%= answer.choice.content %></td>
+                                    <td class="index-text-content"><%= answer.word.correct_answer %></td>
+                                    <td class="index-text-content">
+                                    <% if  answer.choice.content == answer.word.correct_answer %>
+                                        <i class="fas fa-check-circle"></i>
+                                    <% else %>
+                                        <i class="fas fa-times-circle"></i>
+                                    <% end %>
+                                    </td>
+                                </tr>
                             <% end %>
                         </table>
                     </div>
