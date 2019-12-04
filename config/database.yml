@@ -11,8 +11,9 @@ development:
 test:
   <<: *default
   database: shinya_elearning_test
-production:
-  <<: *default
-  adapter: postgresql
-  encoding: unicode
-  pool: 5
+
+  producton:
+    adapter: postgresql
+    database: shinya_elearning_db
+    pool: 5
+    timeout: 5000
