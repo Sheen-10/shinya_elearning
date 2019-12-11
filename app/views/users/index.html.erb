@@ -1,7 +1,7 @@
 <body class="signup">
     <div class="container mx-auto">
         <div class="row mt-2">
-            <div class=" jumbotron col-md-12 col-md-offset-3 pt-4 pb-3 mb-0">
+            <div class=" jumbotron col-md-12 col-md-offset-3 pt-4 pb-4 mb-0">
                 <div class="offset-md-2 col-md-8 mt-2">
                     <h1 class="text-center mb-4 page-title">Members</h1>
                     <div class="row pt-3 mt-3">
@@ -9,9 +9,9 @@
                             <div class="col-md-6">
                                 <div class="media mb-4 media-container">
                                     <% if user.avatar? %>
-                                        <%= image_tag user.avatar.url, class: "img_size" %>
+                                        <%= image_tag user.avatar.url, class: "img-size" %>
                                     <% else %>
-                                        <%= image_tag 'profile.png', class: "img_size" %>
+                                        <%= image_tag 'profile.png', class: "img-size" %>
                                     <% end %>
                                     <div class="media-body">
                                         <h5 class="pl-2 font-weight-bold"><%= link_to user.name, user %></h5>
@@ -26,6 +26,9 @@
                         <%= will_paginate %>
                     </div>
                 </nav>
+                <div class="text-center">
+                    <%= link_to 'Back', root_path, class:"btn btn-light mt-2" %>
+                </div>
             </div>
         </div>
     </div>

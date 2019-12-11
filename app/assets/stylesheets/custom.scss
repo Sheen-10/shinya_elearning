@@ -84,6 +84,10 @@ address {
 	font-style:normal;
 }
 
+.btn{
+  display: inline-block;
+}
+
 // 全体
 
 .container {
@@ -237,7 +241,9 @@ address {
   letter-spacing: 0.1em;
 }
 
-
+.admin-home-p {
+  color: white;
+}
 
 // users-index
 
